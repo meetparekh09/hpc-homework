@@ -21,6 +21,7 @@ int main(int argc, char **argv) {
     double *t = (double*) malloc(n * n * sizeof(double));
 
     #ifdef _OPENMP
+    printf("Threads in use :: %d\n", omp_get_num_threads());
     #pragma omp parallel for
     #endif
     for(int i = 0; i < n; i++) {
@@ -30,9 +31,12 @@ int main(int argc, char **argv) {
         }
     }
 
+    Timer timer;
+
+    timer.tic();
     int iter = 0;
     double error = 1e9;
-    while((iter < LIMIT) || (error > TOLERANCE)) {
+    while((iter < LIMIT) && (error > TOLERANCE)) {
 
         #ifdef _OPENMP
         #pragma omp parallel for
@@ -64,12 +68,14 @@ int main(int argc, char **argv) {
         }
 
         if(iter % 100 == 0) {
-            printf("Iter :: %d, error :: %lf\n", iter, error);
+            printf("Iter :: %d\n", iter);
         }
 
 
         iter += 1;
 
     }
+
+    printf("Time for %d iterations, for n : %ld is %f", iter, n, timer.toc());
     return 0;
 }
