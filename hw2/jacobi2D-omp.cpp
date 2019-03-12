@@ -39,18 +39,7 @@ int main(int argc, char **argv) {
         #endif
         for(int i = 1; i < n-1; i++) {
             for(int j = 1; j < n-1; j++) {
-                if((i+j)%2 == 0)
-                    t[i + n*j] = (h*h + u[i-1 + n*j] + u[i + n*(j-1)] + u[i+1 + n*j] + u[i + n*(j-1)])/4;
-            }
-        }
-
-        #ifdef _OPENMP
-        #pragma omp parallel for
-        #endif
-        for(int i = 1; i < n-1; i++) {
-            for(int j = 1; j < n-1; j++) {
-                if((i+j)%2 == 1)
-                    t[i + n*j] = (h*h + t[i-1 + n*j] + t[i + n*(j-1)] + t[i+1 + n*j] + t[i + n*(j-1)])/4;
+                t[i + n*j] = (h*h + u[i-1 + n*j] + u[i + n*(j-1)] + u[i+1 + n*j] + u[i + n*(j-1)])/4;
             }
         }
 
