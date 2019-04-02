@@ -1,0 +1,39 @@
+Code run on snappy1 compute server of CIMS. snappy1 has 20 cores of Intel(R) Xeon(R) CPU E5-2680 v2 @ 2.80GHz processor.
+
+
+Results for different value of N and threads:
+N = 100000, sequential-scan = 0.000844s
+N = 100000, Num Threads = 10, parallel-scan   = 0.000877s, error = 0
+N = 100000, Num Threads = 15, parallel-scan   = 0.000538s, error = 0
+N = 100000, Num Threads = 20, parallel-scan   = 0.005765s, error = 0
+N = 100000, Num Threads = 25, parallel-scan   = 0.001205s, error = 0
+N = 100000, Num Threads = 30, parallel-scan   = 0.000577s, error = 0
+N = 100000, Num Threads = 40, parallel-scan   = 0.000643s, error = 0
+N = 1000000, sequential-scan = 0.002944s
+N = 1000000, Num Threads = 10, parallel-scan   = 0.004358s, error = 0
+N = 1000000, Num Threads = 15, parallel-scan   = 0.002297s, error = 0
+N = 1000000, Num Threads = 20, parallel-scan   = 0.007615s, error = 0
+N = 1000000, Num Threads = 25, parallel-scan   = 0.002841s, error = 0
+N = 1000000, Num Threads = 30, parallel-scan   = 0.002790s, error = 0
+N = 1000000, Num Threads = 40, parallel-scan   = 0.003320s, error = 0
+N = 10000000, sequential-scan = 0.024381s
+N = 10000000, Num Threads = 10, parallel-scan   = 0.019111s, error = 0
+N = 10000000, Num Threads = 15, parallel-scan   = 0.013801s, error = 0
+N = 10000000, Num Threads = 20, parallel-scan   = 0.017114s, error = 0
+N = 10000000, Num Threads = 25, parallel-scan   = 0.016032s, error = 0
+N = 10000000, Num Threads = 30, parallel-scan   = 0.018260s, error = 0
+N = 10000000, Num Threads = 40, parallel-scan   = 0.016019s, error = 0
+N = 100000000, sequential-scan = 0.232576s
+N = 100000000, Num Threads = 10, parallel-scan   = 0.139817s, error = 0
+N = 100000000, Num Threads = 15, parallel-scan   = 0.142303s, error = 0
+N = 100000000, Num Threads = 20, parallel-scan   = 0.148862s, error = 0
+N = 100000000, Num Threads = 25, parallel-scan   = 0.150250s, error = 0
+N = 100000000, Num Threads = 30, parallel-scan   = 0.142065s, error = 0
+N = 100000000, Num Threads = 40, parallel-scan   = 0.164844s, error = 0
+N = 1000000000, sequential-scan = 2.365818s
+N = 1000000000, Num Threads = 10, parallel-scan   = 1.350153s, error = 0
+N = 1000000000, Num Threads = 15, parallel-scan   = 1.443794s, error = 0
+N = 1000000000, Num Threads = 20, parallel-scan   = 1.394810s, error = 0
+N = 1000000000, Num Threads = 25, parallel-scan   = 1.435432s, error = 0
+N = 1000000000, Num Threads = 30, parallel-scan   = 1.487206s, error = 0
+N = 1000000000, Num Threads = 40, parallel-scan   = 1.369580s, error = 0
