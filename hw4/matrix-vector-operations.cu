@@ -15,7 +15,6 @@ void inner_product(double *x, double *y, double *ans_ptr, long N) {
     *ans_ptr = ans;
 }
 
-
 void matrix_vector_mult(double *x, double *y, double *ans_ptr, long M, long N) {
     #pragma omp parallel for
     for(int i = 0; i < M; i++) {
@@ -27,7 +26,6 @@ void matrix_vector_mult(double *x, double *y, double *ans_ptr, long M, long N) {
         ans_ptr[i] = ans;
     }
 }
-
 
 __global__ void reduction_kernel2(double* sum, const double* a, long N){
   __shared__ double smem[BLOCK_SIZE];
