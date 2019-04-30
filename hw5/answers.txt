@@ -1,0 +1,12 @@
+For N = 100000, NP = 64, CIMS Crunchy1:
+    Latency = 8.210000s
+
+For N = 100000, NP = 8, CIMS Crackle1:
+    Latency = 0.900000s
+
+
+For N = 10000, NP = 64, CIMS Cruchy1:
+    Bandwidth = 1.869732 GB/s
+
+For N = 10000, NP = 8, CIMS Crackle1:
+    Bandwidth = 1.009782 GB/s
