@@ -1,11 +1,12 @@
 MPI = mpicc
+CFLAGS = -std=c99
 
 TARGETS =  $(basename $(wildcard *.c))
 
 all : $(TARGETS)
 
 %:%.c
-	$(MPI) $< -o $@
+	$(MPI) $(CFLAGS) $< -o $@
 
 clean:
 	-$(RM) $(TARGETS) *~
