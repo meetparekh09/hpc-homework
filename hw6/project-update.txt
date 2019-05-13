@@ -1,0 +1,4 @@
+We have started to benchmark the parallel version of Gradient Descent from libraries such as Tensorflow, SKLearn etc.
+Also, we have implemented embarrasingly parallel versions of Gradient Descent and Stochastic Gradient Descent, and now
+we are looking ahead to implement other parallel algorithms or versions of Gradient Descent which solves Linear Least Squares
+problem
