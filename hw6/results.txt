@@ -1,0 +1,6 @@
+For question 2:
+    Machine Used: Crunchy1
+    Cores: 64
+    Time taken for N = 10000 and 64 Cores :: 0.175021s
+    Time taken for N = 100000 and 64 Cores :: 0.801471s
+    Time taken for N = 1000000 and 64 Cores :: 2.855467s
